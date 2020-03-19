@@ -1,2 +1,2 @@
 # serpentJs
-jeu du serpen
+jeu du serpent
