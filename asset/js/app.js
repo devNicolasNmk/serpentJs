@@ -7,6 +7,7 @@ window.onload = function(){
     var delay = 100;
     var snakee;
     var canvas;
+    var applee;
 
     init();
 
@@ -22,6 +23,7 @@ window.onload = function(){
         //creation du context de dessin
         ctx = canvas.getContext('2d');
         snakee = new Snake( [ [6,4], [5,4], [4,4] ] , "right" );
+        applee = new apple([10,10]);
         //appel de la fonction du refresh du canvas
         refreshCanvas();
 
@@ -34,6 +36,8 @@ window.onload = function(){
         snakee.advance();
         //dessine le serpent
         snakee.draw();
+        //dessine la pomme
+        applee.draw();
         setTimeout(refreshCanvas, delay);
     }
 
@@ -110,8 +114,27 @@ window.onload = function(){
             {
                 this.direction = newDirection;
             }
-            
+
         };
+    }
+
+    function apple(position)
+    {
+        this.position = position;
+        this.draw = function()
+        {
+            //sauve les parametres avant 
+            ctx.save();
+            ctx.fillStyle = "#33cc33";
+            ctx.beginPath();
+            var radius = blockSize /2;
+            var x = position[0]*blockSize + radius;
+            var y = position[1]*blockSize + radius;
+            ctx.arc(x,y, radius, 0, Math.PI*2, true);
+            ctx.fill();
+            //restaure les parametres apres
+            ctx.restore();
+        }
     }
 
     document.onkeydown = function handleKeyDown(e)
