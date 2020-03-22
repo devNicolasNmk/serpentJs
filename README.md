@@ -19,3 +19,5 @@ jeu du serpent
 ### ajout d'un leger Front css
 
 ### ajout d'une page de lancement de partie avec un nouveau background image
+
+### ajout du cdn fontawesome et instructions pour deplacer le serpent
