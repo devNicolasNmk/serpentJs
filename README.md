@@ -13,3 +13,5 @@ jeu du serpent
 ### ajouter la pomme
 
 ### score + game over + style
+
+### class apple et snake
