@@ -17,3 +17,5 @@ jeu du serpent
 ### class apple et snake
 
 ### ajout d'un leger Front css
+
+### ajout d'une page de lancement de partie avec un nouveau background image
