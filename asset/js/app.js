@@ -172,8 +172,10 @@ window.onload = function () {
         canvas.height = canvasHeight;
         canvas.style.display = "block";
         canvas.style.border = "30px solid grey";
+        canvas.style.borderRadius = "10px";
         canvas.style.margin = "50px auto";
-        canvas.style.backgroundColor = "#ddd";
+        // // canvas.style.backgroundColor = "#ddd";
+        canvas.style.backgroundImage = "url('bg.png') no-repeat center center"; 
         //insertion dans le dom
         document.body.appendChild(canvas);
         //creation du context de dessin
@@ -273,7 +275,7 @@ window.onload = function () {
     function drawScore() {
         ctx.save();
         ctx.font = "bold 100px sans-serif";
-        ctx.fillStyle = "gray";
+        ctx.fillStyle = "white";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         var centreX = canvasWidth / 2;

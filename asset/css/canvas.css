@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+canvas{
+    background : url("../js/bg.png");
+    background-size: 902px 602px;
+}

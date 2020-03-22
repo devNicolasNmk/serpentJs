@@ -15,3 +15,5 @@ jeu du serpent
 ### score + game over + style
 
 ### class apple et snake
+
+### ajout d'un leger Front css
