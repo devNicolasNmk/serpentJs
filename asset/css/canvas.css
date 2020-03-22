@@ -8,6 +8,16 @@ body{
     background: url("https://devnicolasnmk.github.io/serpentJs/asset/img/forest.jpg");
 }
 
+h1{
+    color: rgba(255,255,255,.5);
+    font-size: 50px;
+}
+
+p {
+    color: rgba(255, 255, 255, .9);
+    font-size: 20px;
+}
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -19,11 +29,12 @@ body{
 
 .menu{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 20%;
-    background-color: #fff;
+    width: 30%;
+    height: 25%;
+    
 }
 button{
     display: flex;
