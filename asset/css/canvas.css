@@ -5,7 +5,7 @@
 body{
     margin : 0;
     background-color: green;
-    background: url("/asset/img/forest.jpg");
+    background: url("https://devnicolasnmk.github.io/serpentJs/asset/img/forest.jpg");
 }
 
 .wrapper{
